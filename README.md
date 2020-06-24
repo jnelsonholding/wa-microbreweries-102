@@ -8,4 +8,6 @@ To Do List
 - [x] Create basic structure
 - [x] Fill with placeholders
 - [ ] Update placeholders with actual content
+- [x] Add link back to home page
+
 
