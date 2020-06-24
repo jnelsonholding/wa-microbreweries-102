@@ -1,4 +1,31 @@
-header > h1 {
+header {
     text-align: center;
+    background-color: orange;
 }
 
+header > h1 {
+    color: black;
+}
+
+header > ul > li {
+    display: inline;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 100px;
+}
+
+#openStatus {
+    color: red;
+}
+
+#heroPic > img {
+    width: 300px;
+}
+
+#breweryDesc > p {
+    text-align: right;
+}
+
+#breweryMap > img {
+    text-align: right;
+}
