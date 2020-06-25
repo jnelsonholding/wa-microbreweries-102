@@ -9,5 +9,7 @@ To Do List
 - [x] Fill with placeholders
 - [ ] Update placeholders with actual content
 - [x] Add link back to home page
+- [x] Add 3 JavaScript elements
+- [ ] Clean up CSS
 
 
