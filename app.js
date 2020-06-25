@@ -8,10 +8,7 @@ function openHour() {
     return hourNow;
 }
 
-var hourNow = openHour();
 
-// line below for testing a date failure
-// hourNow = 'tom'
 
 function openMessage(hourNow) {
     var openStatus
@@ -27,19 +24,11 @@ function openMessage(hourNow) {
     return openStatus;
 }
 
-var openStatus = openMessage(hourNow);
-
 
 function replaceTextByEl(elID, message) {
     var elToReplace = document.getElementById(elID);
     elToReplace.textContent = message;
 }
-
-replaceTextByEl('openStatus', openStatus);
-
-// var elOpenStatus = document.getElementById('openStatus');
-// elOpenStatus.textContent = openStatus
-
 
 // This will prompt the user for their name and personalize a message.
 
@@ -47,14 +36,6 @@ function getUserName() {
     var userName = prompt("Please enter your name!");
     return userName;
 }
-
-var userName = getUserName();
-
-// var userName;
-// userName = prompt("Please enter your name!")
-
-// line below for testing name failure
-// userName = 20
 
 
 function checkForNameEntered(userName) {
@@ -67,9 +48,17 @@ function checkForNameEntered(userName) {
     return userName
 }
 
+
+// line below for testing a date failure
+// hourNow = 'tom'
+
+// line below for testing name failure
+// userName = 20
+
+
+var hourNow = openHour();
+var openStatus = openMessage(hourNow);
+replaceTextByEl('openStatus', openStatus);
+var userName = getUserName();
 userName = checkForNameEntered(userName);
-
 replaceTextByEl('name', userName);
-
-// var elName = document.getElementById('name');
-// elName.textContent = userName;
