@@ -1,6 +1,6 @@
 header {
     text-align: center;
-    background-color: orange;
+    background-color: #f55b08cb;
 }
 
 header > h1 {
@@ -15,17 +15,48 @@ header > ul > li {
 }
 
 #openStatus {
-    color: red;
+    color: rgb(58, 11, 41);
+}
+
+body {
+    background-color: hsla(320, 79%, 44%, 0.2);
+}
+
+#heroPic {
+    max-width: 400px;
 }
 
 #heroPic > img {
     width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#breweryDesc {
+    max-width: 400px;
 }
 
 #breweryDesc > p {
-    text-align: right;
+    text-align: left;
 }
 
-#breweryMap > img {
-    text-align: right;
+#brewList {
+    max-width: 400px;
 }
+
+#breweryMap {
+    max-width: 400px;
+}
+
+#opHours {
+    max-width: 400px;
+}
+
+.bodyChunk {
+    border: 1px solid black;
+}
+
+/* .upper {
+
+} */
