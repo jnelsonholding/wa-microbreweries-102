@@ -7,15 +7,25 @@ header > h1 {
     color: black;
 }
 
-header > ul > li {
+#address > li {
     display: inline;
     border: 1px solid black;
     padding: 5px;
-    margin: 100px;
+    margin: 50px;
 }
 
 #openStatus {
     color: rgb(58, 11, 41);
+}
+
+#beerGlasses > li {
+    display: inline;
+    padding: 5px;
+    margin: 50px;
+}
+
+#beerGlasses > li > img {
+    max-width: 30px;
 }
 
 body {
@@ -32,6 +42,8 @@ body {
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
+
 
 #breweryDesc {
     max-width: 400px;

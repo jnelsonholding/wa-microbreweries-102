@@ -11,5 +11,11 @@ To Do List
 - [x] Add link back to home page
 - [x] Add 3 JavaScript elements
 - [ ] Clean up CSS
+- [x] Add for and while loops
 
+
+Credit for useful code instructions:
+
+https://stackoverflow.com/questions/47951287/dynamically-add-li-to-ul-javascript/47951374
+https://stackoverflow.com/questions/25766567/filling-ul-li-with-images
 
