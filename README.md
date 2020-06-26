@@ -7,15 +7,24 @@ To Do List
 
 - [x] Create basic structure
 - [x] Fill with placeholders
-- [ ] Update placeholders with actual content
+- [x] Update placeholders with actual content
 - [x] Add link back to home page
 - [x] Add 3 JavaScript elements
-- [ ] Clean up CSS
+- [x] Clean up CSS
 - [x] Add for and while loops
 
 
-Credit for useful code instructions:
+Credit for useful code instructions and source material:
+
+https://www.urbanfamilybrewing.com/
 
 https://stackoverflow.com/questions/47951287/dynamically-add-li-to-ul-javascript/47951374
+
 https://stackoverflow.com/questions/25766567/filling-ul-li-with-images
+
+http://publicdomainfiles.com
+
+https://www.w3schools.com/css/
+
+
 

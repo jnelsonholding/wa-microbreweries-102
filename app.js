@@ -1,6 +1,6 @@
 'use strict'
 
-// This section creates a message in the header to let the user know if the brewery is currently open
+// openHour() checks the time and returns the current hour
 
 function openHour() {
     var today = new Date();
@@ -8,7 +8,7 @@ function openHour() {
     return hourNow;
 }
 
-
+// openMessage uses the hour of the day to determine the appropriate message for the user.
 
 function openMessage(hourNow) {
     var openStatus
@@ -24,6 +24,7 @@ function openMessage(hourNow) {
     return openStatus;
 }
 
+// replaceTextByEl() targets an element's ID and replaces the text with a message.
 
 function replaceTextByEl(elID, message) {
     var elToReplace = document.getElementById(elID);
@@ -38,18 +39,19 @@ function replaceTextByEl(elID, message) {
 
 function getUserName() {
     var userName = prompt("Please enter your name!");
-    var i = 0
+    var i = 0;
     while (userName === '') {
         if (i > 3) {
             userName = prompt("I don't get why you're being so stubborn, just type something, I don't care if it's a name really.");
         } else {
             userName = prompt("It would make me really happy if you would actually enter something");
-            i++
+            i++;
         }
     }
     return userName;
 }
 
+// checkForNameEntered serves a welcome message
 
 function checkForNameEntered(userName) {
     if (typeof userName !== 'string' || userName === '') {
@@ -58,7 +60,7 @@ function checkForNameEntered(userName) {
     } else {
         confirm("Welcome, " + userName + "!");
     }
-    return userName
+    return userName;
 }
 
 
@@ -80,43 +82,40 @@ replaceTextByEl('name', userName);
 
 
 
-// function replaceTextByEl(elID, message) {
-//     var elToReplace = document.getElementById(elID);
-//     elToReplace.textContent = message;
-// }
+// This function uses the amount argument to determine how many glasses
+// of beer to add to a header list.
+
 function addBeerGlasses(amount) {
-    // var beerGlasses = 'beer';
-    // var beerGlasses = '<img src="http://res.publicdomainfiles.com/pdf_view/74/13932316828562.png"></img>'
-    var ul = document.getElementById('beerGlasses');
+    var ul = document.getElementById('beerGlasses'); // saves the empty ul by ID
 
-    for (var i = 0; i < amount; i++) {
-        var li = document.createElement('li');
-        // li.appendChild(document.createTextNode(beerGlasses));
-        var img = document.createElement('img');
-        img.src = "http://res.publicdomainfiles.com/pdf_view/74/13932316828562.png";
-        li.appendChild(img);
-        ul.appendChild(li);
+    for (var i = 0; i < amount; i++) { // will loop 'amount' times
+        var li = document.createElement('li'); // creates a list element
+        var img = document.createElement('img'); // creates an img element
+        img.src = "http://res.publicdomainfiles.com/pdf_view/74/13932316828562.png"; // assigns a source to the img
+        li.appendChild(img); // inserts the new img into the new li
+        ul.appendChild(li); // adds the li to the header ul
     }
-
-    // li = ul.getElementsByTagName('li');
-
-
 }
 
 
+// howManyBeers(), it asks.
+// this many, the user says.
+// no beers for user if they don't play nice.
+// extra beers if they're not too greedy.
+
 function howManyBeers() {
     var beerQty = parseInt(prompt('How many beers?'));
-    if (isNaN(beerQty)) {
+    if (isNaN(beerQty)) {                               // if parseInt couldn't convert the user input
         alert('I can\'t understand you, no beers ...');
-        beerQty = 0
-    } else if (beerQty >= 8) {
+        beerQty = 0;
+    } else if (beerQty > 10) {
         alert('That\'s too many, we\'re cutting you off at 6.');
         beerQty = 6;
     } else if (beerQty < 1) {
-        alert('I admire your restraint.');
-        beerQty = 0
+        alert('Thank you. Stay as long as you like.');
+        beerQty = 0;
     }
-    return beerQty
+    return beerQty;
 }
 
 

@@ -1,6 +1,11 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 header {
     text-align: center;
-    background-color: #f55b08cb;
+    /* background-color: #7a3e1dcb; */
+    background-image: linear-gradient(to bottom right, rgb(255, 166, 0), rgb(165, 22, 165));
 }
 
 header > h1 {
@@ -33,7 +38,9 @@ body {
 }
 
 #heroPic {
-    max-width: 400px;
+    max-width: 700px;
+    max-height: 700px;
+    width: 48%;
 }
 
 #heroPic > img {
@@ -41,34 +48,28 @@ body {
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    float: left;
 }
 
 
 
 #breweryDesc {
-    max-width: 400px;
+    text-align: left;
+    width: 48%;
+    float: right;
+    font-size: x-large;
 }
 
 #breweryDesc > p {
     text-align: left;
+    position: relative;
 }
 
 #brewList {
-    max-width: 400px;
+    width: 48%;
+    float: left;
 }
 
 #breweryMap {
-    max-width: 400px;
+    width: 48%;
 }
-
-#opHours {
-    max-width: 400px;
-}
-
-.bodyChunk {
-    border: 1px solid black;
-}
-
-/* .upper {
-
-} */
